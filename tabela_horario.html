@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        td, th {
+            border: 1px solid black;
+            width: 200px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th {
+            background-color: #666666;
+            color: white
+        }
+        .tempo {
+            font-size: x-small;
+            width:0%;
+            color: white;
+            background-color: #666666;
+            
+        }
+        .horario {
+            width:8%;
+        }
+        .turno {
+            text-align: center;
+            width:0%;
+            color: white;
+            background-color: #999999;
+            
+        }
+        .intervalo {
+            text-align: center;
+            width: 0%;
+            color: white;
+            background-color: #999999;
+        }
+        .dias {
+            color: white;
+            background-color: #666666;
+            width:max-content;
+        }
+        #horario {
+            border: 1px
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tabela de horários</h1>
+    <table>
+        <thead>
+            <th colspan="6">SEMANA</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="dias" id="horario">Horário</td>
+                <td class="dias">Segunda</td>
+                <td class="dias">Terça</td>
+                <td class="dias">Quarta</td>
+                <td class="dias">Quinta</td>
+                <td class="dias">Sexta</td>
+            </tr>
+            <tr>
+                <td class="turno", colspan="6">Manhã</td>
+            </tr>
+            <tr>
+                <td class="tempo">M1</td>
+                <td class="horario">7:30 - 8:20</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="tempo">M2</td>
+                <td class="horario">8:20 - 9:10</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="tempo">M3</td>
+                <td class="horario">9:10 - 10:00</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="intervalo", colspan="6">Intervalo</td>
+            </tr>
+            <tr>
+                <td class="tempo">M4</td>
+                <td class="horario">10:20 - 11:10</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="tempo">M5</td>
+                <td class="horario">11:10 - 12:00</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="turno", colspan="6">Tarde</td>
+            </tr>
+            <tr>
+                <td class="tempo">T1</td>
+                <td class="horario">13:00 - 13:50</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="tempo">T2</td>
+                <td class="horario">13:50 - 14:40</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="tempo">T3</td>
+                <td class="horario">14:40 - 15:30</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="intervalo", colspan="6">Intervalo</td>
+            </tr>
+            <tr>
+                <td class="tempo">T4</td>
+                <td class="horario">15:50 - 16:40</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="tempo">T5</td>
+                <td class="horario">16:40 - 17:30</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
