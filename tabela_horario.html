@@ -9,7 +9,6 @@
         table {
             border: 1px solid black;
             border-collapse: collapse;
-            
         }
         td, th {
             border: 1px solid black;
@@ -22,7 +21,7 @@
             background-color: #666666;
             color: white
         }
-        .tempo {
+        .aula {
             font-size: x-small;
             width:0%;
             color: white;
@@ -32,26 +31,24 @@
         .horario {
             width:8%;
         }
-        .turno {
-            text-align: center;
-            width:0%;
-            color: white;
-            background-color: #999999;
-            
-        }
-        .intervalo {
-            text-align: center;
-            width: 0%;
-            color: white;
-            background-color: #999999;
-        }
         .dias {
             color: white;
             background-color: #666666;
             width:max-content;
         }
-        #horario {
-            border: 1px
+        .turno {
+            text-align: center;
+            width:0%;
+            color: black;
+            background-color: #999999;
+        }
+        .intervalo {
+            width: 0%;
+            font-size: small;
+            text-align: center;
+            width:0%;
+            color: black;
+            background-color: #d3d3d3;
         }
         
     </style>
@@ -60,11 +57,11 @@
     <h1>Tabela de horários</h1>
     <table>
         <thead>
-            <th colspan="6">SEMANA</th>
+            <th colspan="7">SEMANA</th>
         </thead>
         <tbody>
             <tr>
-                <td class="dias" id="horario">Horário</td>
+                <td class="dias" colspan="2">Horário</td> <!--Coloquei o "horário" na classe "dias" porque ele vai receber os mesmos estilos que os dias.-->
                 <td class="dias">Segunda</td>
                 <td class="dias">Terça</td>
                 <td class="dias">Quarta</td>
@@ -72,10 +69,10 @@
                 <td class="dias">Sexta</td>
             </tr>
             <tr>
-                <td class="turno", colspan="6">Manhã</td>
+                <td class="turno", colspan="7">Manhã</td>
             </tr>
             <tr>
-                <td class="tempo">M1</td>
+                <td class="aula">M1</td>
                 <td class="horario">7:30 - 8:20</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -84,7 +81,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="tempo">M2</td>
+                <td class="aula">M2</td>
                 <td class="horario">8:20 - 9:10</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -93,7 +90,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="tempo">M3</td>
+                <td class="aula">M3</td>
                 <td class="horario">9:10 - 10:00</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -102,10 +99,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="intervalo", colspan="6">Intervalo</td>
+                <td class="intervalo", colspan="7">Intervalo</td>
             </tr>
             <tr>
-                <td class="tempo">M4</td>
+                <td class="aula">M4</td>
                 <td class="horario">10:20 - 11:10</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -114,7 +111,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="tempo">M5</td>
+                <td class="aula">M5</td>
                 <td class="horario">11:10 - 12:00</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -123,10 +120,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="turno", colspan="6">Tarde</td>
+                <td class="turno", colspan="7">Tarde</td>
             </tr>
             <tr>
-                <td class="tempo">T1</td>
+                <td class="aula">T1</td>
                 <td class="horario">13:00 - 13:50</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -135,7 +132,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="tempo">T2</td>
+                <td class="aula">T2</td>
                 <td class="horario">13:50 - 14:40</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -144,7 +141,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="tempo">T3</td>
+                <td class="aula">T3</td>
                 <td class="horario">14:40 - 15:30</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -153,10 +150,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="intervalo", colspan="6">Intervalo</td>
+                <td class="intervalo", colspan="7">Intervalo</td>
             </tr>
             <tr>
-                <td class="tempo">T4</td>
+                <td class="aula">T4</td>
                 <td class="horario">15:50 - 16:40</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -165,7 +162,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="tempo">T5</td>
+                <td class="aula">T5</td>
                 <td class="horario">16:40 - 17:30</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
